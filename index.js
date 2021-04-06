@@ -51,6 +51,6 @@ client.connect(err => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is Running http://localhost:${port}`)
+    console.log(`Server is Running http://localhost:${process.env.PORT || port}`)
 })
 
